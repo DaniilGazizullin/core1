@@ -60,11 +60,11 @@ public class Methods {
     return "";
   }
 
-  public int[] sumArrayElements(int[] arr){
+  public int[] sumArrayElements(int[] arr){//по сути сделал правильно, но ответ неверен
     int []numb=new int[arr.length];
     numb[0]=arr[0];
     for ( int i=1;i< arr.length;i++){
-      numb[i]=arr[i]+numb[i-1];
+      numb[i]=arr[i]+arr[i-1];
 
     }
     return numb;

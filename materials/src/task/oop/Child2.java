@@ -2,28 +2,28 @@ package task.oop;
 
 public class Child2 {
 
-    public int sumOfTwoNumbers(int a, int b, int c) {
-        return a + b + c;
-    }
+  public int sumOfTwoNumbers(int a, int b, int c) {
+    return a+b+c;
+  }
 
-    public int sumOfStringAndNumber(String str1, String str2, String str3) {
-        int num1 = Integer.parseInt(str1);
-        int num2 = Integer.parseInt(str2);
-        int num3 = Integer.parseInt(str3);
-        return num1 + num2 + num3;
-    }
+  public int sumOfStringAndNumber(String str1, String str2, String str3) {
+    int num1=Integer.parseInt(str1);
+    int num2=Integer.parseInt(str2);
+    int num3=Integer.parseInt(str3);
+    return num1+num2+num3;
+  }
 
-    public String returnString(String str1, String str2) {
-        return str1 + str2;
-    }
+  public String returnString(String str1, String str2) {
+    return str1+str2;
+  }
 
-    public void printParent(String str) {
-        System.out.println("I am Child2" + str);
-    }
+  public void printParent(String str) {
+    System.out.println("I am Child2"+str);
+  }
 
-    public String concatenateStrings(String str1, String str2, String str3) {
-        return str1 + str2 + str3;
-    }
+  public String concatenateStrings(String str1, String str2, String str3) {
+    return str1+str2+str3;
+  }
 }
 
 //sum(int a, int b, int c) : перегрузите метод так, чтобы он принимал 3 числа и возвращал их сумму.
