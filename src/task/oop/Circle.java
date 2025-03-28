@@ -1,15 +1,27 @@
 package task.oop;
 
-public class Circle {
+public class Circle extends Figure {
 
-  private double radius;
+    public static void main(String[] args) {
+        Circle circle = new Circle("Круг1, площадь : ", 6);
+        System.out.println(circle.getName() + circle.calculateArea());
+    }
 
-  public Circle(String name, double radius) {
-    super();
-    this.radius = radius;
-  }
+    private double radius;
 
-  public double calculateArea() {
-    return 0;
-  }
+    public Circle(String name, double radius) {
+        super(name);
+        this.radius = radius;
+    }
+
+    @Override
+    public double calculateArea() {
+        return radius * radius * Math.PI;
+    }
+
+    @Override
+    public String getName() {
+        return "Круг:" + name;
+    }
+
 }
