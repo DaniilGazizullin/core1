@@ -22,7 +22,7 @@ public class Child2 {
     }
 
     public String concatenateStrings(String str1, String str2, String str3) {
-        return str1 + str2 + str3;
+        return str1.concat(str2).concat(str3);
     }
 }
 

@@ -19,8 +19,8 @@ public class Methods {
   public String sumOfStringAndNumber(String str, int num) {
     int s = Integer.parseInt(str);
     s = s + num;
-    String itog = Integer.toString(s);
-    return itog;
+    String result = Integer.toString(s);
+    return result;
   }
 
   public boolean compareStringNumberWithInt(String str, int num) {
@@ -37,23 +37,23 @@ public class Methods {
   }
 
   public String checkArrayEvenOdd(int[] arr) {
-    boolean chetnie = false;
-    boolean nechetnie = false;
+    boolean even = false;
+    boolean uneven = false;
     for (int i = 0; i < arr.length; i++) {
       if (arr[i] % 2 == 0) {
-        chetnie = true;
+        even = true;
 
       } else {
-        nechetnie = true;
+        uneven = true;
 
       }
-      if (chetnie == true && nechetnie == true) {
+      if (even == true && uneven == true) {
         return "Массив четных и нечетных чисел";
       }
     }
-    if (nechetnie == true) {
+    if (uneven == true) {
       return "Массив нечетных чисел";
-    } else if (chetnie == true) {
+    } else if (even == true) {
       return "Массив четных чисел";
     }
 
@@ -102,14 +102,14 @@ return arr[i];
 
   public int countLetterA(String str) {
     char letter='a';
-    int summa =0;
+    int result =0;
     String str1=str.toLowerCase();
     for(int i=0;str.length()>i;i++){
       if(str1.charAt(i)==letter){
-        summa++;
+        result++;
       }
     }
-    return summa;
+    return result;
   }
 
   private int wallet = 1000;
